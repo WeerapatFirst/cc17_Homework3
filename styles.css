@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(238, 238, 238);
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 8px;
+  box-shadow: 4px 4px 8px #ddd;
+}
+
+nav.left {
+  /* border: 1px dashed red; */
+  width: 320px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+nav.left input {
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  padding-inline: 8px;
+  font-size: 18px;
+  flex-grow: 1;
+  color: silver;
+  cursor: pointer;
+}
+
+nav.center {
+  /* border: 1px dashed red; */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+nav.center .box-icon {
+  /* background-color: antiquewhite; */
+  width: 129px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+nav.center .box-icon:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav.right {
+  /* border: 1px dashed red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+nav.right .round-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #e4e6eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+nav.right .round-icon:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.main-wrapper {
+  background-color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* sidebar-left */
+
+.sidebar-left {
+  /* border: 1px dashed deeppink; */
+  min-height: 100vh;
+  flex-basis: 360px;
+}
+
+.sidebar-left .list-bar {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+  padding: 20px;
+  font-weight: 550;
+}
+
+.sidebar-left .list-bar i {
+  font-size: 25px;
+  margin-right: 8px;
+  /* padding: 8px; */
+  /* padding-bottom: 10px; */
+  /* border: 1px solid; */
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  align-content: center;
+  color: rgb(105, 105, 243);
+}
+
+.sidebar-left .list-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-left .list-bar p {
+  color: rgb(165, 159, 159);
+  border-top: 1px solid silver;
+  padding-top: 8px;
+}
+
+.sidebar-left .list-bar a:hover {
+  background-color: white;
+  border-radius: 50px;
+  /* width: 200px; */
+}
+
+/* ########### news-feed ############ */
+.news-feed {
+  /* border: 1px dashed deeppink; */
+  min-height: 100vh;
+  flex-basis: 680px;
+}
+
+/* ### stroy-top */
+
+/* .news-feed .story-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.news-feed .story-top .story {
+  display: flex;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+} */
+
+/* #### feed-input */
+.news-feed .feed-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.feed-input .feed-top {
+  display: flex;
+  /* align-content: center; */
+  /* padding: 8px; */
+  gap: 16px;
+  font-size: 30px;
+}
+
+.feed-input .feed-top i {
+  width: 40px;
+  height: 40px;
+  border: 0 solid silver;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.feed-input .feed-top input {
+  flex-grow: 1;
+  border-radius: 20px;
+  border: 1px;
+  background-color: rgb(238, 238, 238);
+  color: silver;
+  padding-left: 10px;
+}
+
+/* feed-bottom */
+.feed-input .feed-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  /* font-size: 18px; */
+  /* background-color: white; */
+}
+
+.feed-input .feed-bottom i {
+  padding-right: 10px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.feed-input .feed-bottom a {
+  color: rgb(133, 132, 132);
+  text-decoration: none;
+}
+
+.feed-input .feed-bottom i.fa-solid, i.fa-brands {
+  color: red;
+}
+
+.feed-input .feed-bottom i.fa-regular {
+  color: green;
+}
+
+
+/* ####### content ####### */
+.content {
+  /* background-color: red; */
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* .content .content01 {
+  background-color: white;
+} */
+
+.content .content01 i {
+  font-size: 25px;
+  border: 0 solid silver;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  background-color: rgb(238, 238, 238);
+  margin-right: 8px;
+  /* margin-bottom: -10px; */
+}
+
+.content .content01 a {
+  text-decoration: none;
+}
+
+
+.content .content01 p {
+  font-size: 12px;
+  color: silver;
+  margin-left: 50px;
+}
+
+.content .content02 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content .content03 img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .content04 {
+ display: flex;
+ justify-content: space-between;
+ /* padding: 8px; */
+ font-size: 18px;
+}
+
+.content .content04 .moji {
+  background-color: white;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.content .content04 a i.fa-face-grin-tongue-wink {
+  margin-right: 4px;
+}
+
+.content .content04 a {
+  text-decoration: none;
+  color: silver;
+}
+
+.content .content04 .moji i.fa-solid {
+  color: rgb(219, 157, 42);
+}
+
+
+.content .content04 p {
+  background-color: white;
+  border-radius: 50px;
+  padding: 8px;
+  color: silver;
+}
+
+
+
+/* ###### sidebar-right ######## */
+.sidebar-right {
+  /* border: 1px dashed deeppink; */
+  min-height: 100vh;
+  flex-basis: 360px;
+}
+
+.sidebar-right .set-profile {
+  margin: 15px;
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-right .bar-profile {
+  display: flex;
+  margin: 15px;
+}
+
+.sidebar-right .bar-profile img {
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+.sidebar-right .bar-page {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.sidebar-right .bar-page i {
+  margin-top: 12px;
+  margin-right: 8px;
+  color: rgb(102, 102, 102);
+}
+
+.sidebar-right .bar-page a {
+  color: rgb(102, 102, 102);
+  text-decoration: none;
+}
